@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Solar | Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/apple-touch-icon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <style>
+        body{
+            margin: 0%;
+            margin-top: 0% ;
+        
+        }
+        header{
+            background-color: rgb(50, 50, 255);
+            padding: 40px;
+            background-color: fixed;
+            
+        }
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-weight: 500;
+            text-shadow: 50px;
+            color: whitesmoke   ;
+        }
+    
+        .b1{
+            padding: 5px;
+         }
+         .b2{
+            padding: 5px;
+         }
+         .b3{
+            padding: 5px;
+         }
+         .b4{
+            padding: 5px;
+         }
+         nav{
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+         }
+         nav a{
+            text-decoration: none;
+            padding: 5px;
+            color: whitesmoke;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+         h2{
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 26px;
+         }
+         nav a:hover{
+            color: darkgoldenrod;
+           
+         }
+         main{
+            text-align: center;
+         }
+         .book{
+            border: none;
+            cursor: pointer;
+            background-color: gold;
+            font-size: 14px;
+            padding: 4px;
+            float: right;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        .book:hover{
+             color: darkcyan;
+            text-shadow: 10px;
+        }
+        .step{
+            background-image: url(../images/Bookit.png);
+            height: 500px;
+            width: 1458px;
+            position:  relative;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            font-size: 22px;
+            text-align: left;
+            padding: 30px;
+            overflow: hidden;
+        }
+        .click{
+            color: rgb(0, 24, 75);
+            text-decoration: none;
+
+        }
+        .click:hover{
+            color: goldenrod;
+            animation: forwards;
+            
+        }
+        .why{
+            background-image: url(../images/Banner1-jpg-webp.webp);
+            height: 350px;
+            width: 1519px;
+            position: relative;
+            background-attachment: no-repeat;
+            
+        }
+        .we{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            margin: 20px;
+            padding: 10px;
+        }
+        .lastsec{
+            background-color: rgb(241, 241, 241);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif     ;
+        }
+        .founder{
+            padding: 15px;
+            text-align: center;
+            border-radius: 300px;
+            height: 250px;
+            width: 250px;
+        }
+        .lastsec a{
+            text-decoration: none;
+            padding: 5px;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 480;
+
+        }
+        .lastsec h5{
+            margin: 40px;
+        }
+        .yt:hover{
+            color: #FF0000;
+        }
+        .tw:hover{
+            color: #1DA1F2;
+        } 
+        .Li:hover{
+            color: #0A66C2;
+        }
+        footer{
+            background-color: #333;
+            overflow: hidden;
+        }
+        footer a {
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+            float: left;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        footer{
+            background-color: #333;
+        }
+        h3{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        footer a:hover{
+            color: black;
+        }
+        @media  screen and (max-width: 700px) {
+            nav{
+                flex-direction: column;  
+            }
+            
+        }
+        .too span{
+            background: linear-gradient(to right,rgb(182, 58, 194),rgb(86, 0, 105));
+            border-radius: 20px;
+            padding: 10px 55px;
+        }
+        .our span{
+            background: linear-gradient(to right,rgb(255, 159, 91),rgb(141, 78, 0));
+            border-radius: 20px;
+            padding: 10px 55px;
+        }
+        .yy span{
+            background: linear-gradient(to right,rgb(120, 105, 121),rgb(134, 131, 135));
+            border-radius: 20px;
+            padding: 10px 55px;
+        }
+        .lastsec h2{
+            padding: 10px;
+        }
+
+        .carousel-cell {
+        width: 66%;
+        margin-right: 10px;
+        border-radius: 5px;
+        }
+        .carousel-cell img{
+        width: 50%;
+        }
+        .h{
+            padding: 30px;
+        }
+        .carousel{
+            background-color: #333;
+            margin: 0%;
+        }
+        .handels a{
+            background-color:lightgray;
+            padding: 10px;
+            border-radius: 30px;
+            margin: 5px 8px    ;
+        }
+        .handels a:hover{
+            background-color: rgb(30 30 30);
+        }
+        .handels a i{
+            margin: 5px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Light Solar</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a target="_blank" href="https://www.youtube.com/">Panels</a>
+        <a href="#">Benifits</a>
+        <a href="#">Bookings</a>
+        <a href="#">Login/SignUp</a>
+        <span class="btn">
+        <button translate="yes to english" class="book">Book Now!</button>
+        </span>
+    </nav>
+    <main>
+        <section class="h">
+            <h2 class="our"><span> Our Work </span></h2> 
+            <div class="carousel"
+            data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell"><img class="b1" src="../images/Screenshot 2023-05-28 154939.png" alt="Solar1" ></div>
+            <div class="carousel-cell"><img class="b2" src="../images/Screenshot 2023-05-28 154956.png" alt="Solar2"></div>
+            <div class="carousel-cell"><img class="b3" src="../images/Screenshot 2023-05-28 155017.png" alt="Solar3"></div>
+            <div class="carousel-cell"><img class="b4" src="../images/Screenshot 2023-05-28 155218.png" alt="Solar4"></div>
+            </div>
+
+           
+        </section>
+
+        <section>
+            <h2 class="too"> <span> Steps to Book</span></h2>
+        <div class="step">
+         <br>
+         <br>
+            <li>Click On <a class="click" href="#">"Book Now!"</a></li>
+         <br>
+         <br>
+            <li>Fill the form</li>
+         <br>
+         <br>
+            <li>Choose your favourite solar model</li>
+         <br>
+         <br>
+            <li>Select a suitable day</li>
+         <br>
+         <br>
+             <li>Then you are good to go!</li>
+         <br>
+         <br>  
+        </div>  
+        </section>
+
+        <section>
+            <h2 class="yy"><span>Why Light Solar ? </span> </h2>
+            <div class="why">
+                <br>
+                <p class="we">We welcome you to the new world of solar which is the most benifitial style of living in the 21st century </p>
+                <p class="we">We,Light Solar give you the oppurtunity for being a part in saving the earth , also its an value for money product giving service for years just by one time investment</p>
+                <p class="we">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facere rem commodi nihil libero, sit delectus eum sint quisquam saepe incidunt accusamus repellendus aperiam magnam, harum, odit voluptates omnis non sapiente. Aliquid eius consequatur saepe esse, officiis ipsam quisquam fugiat, et recusandae tempora in, exercitationem eos officia. Eius suscipit, maxime saepe ipsam cum unde doloremque odio perspiciatis, quasi voluptatum beatae? Assumenda commodi sapiente facere obcaecati nesciunt voluptate impedit corrupti voluptas consequuntur placeat odit reprehenderit omnis magnam nobis, blanditiis non, voluptates aut, delectus optio deserunt? Repudiandae vero nulla esse temporibus ab repellendus iste ipsum, earum laudantium nam sunt ullam praesentium delectus.</p>
+                <br>
+                <br>    
+            </div>
+        </section>
+        <section class="lastsec">
+            <h2>Our Founder</h2>
+
+            <img class="founder" src="../images/Profile.png" alt="The Founder">
+
+            <h3>Mohammed Uzair Shams</h3>
+            <div class="handels">
+            <a href="https://www.youtube.com" class="yt" target="_blank"> <i class="fa fa-youtube-play"></i> Youtube</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            <a href="https://www.twitter.com" class="tw" target="_blank"><i class="fa fa-twitter-square"></i>Twitter</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com" class="Li" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+         </div>
+            <h4>Young TEDx speaker and #1 Online JEE Educator | Founder of 5 YouTube Channels with 2.5 million young hustlers. </h4>
+            <h5>I help students across India find their right career path. I have been a guest speaker at 22 Colleges including Top IITs, BITS Pilani, IIIT's, NIT's, SRCC, Jadavpur University etc. I am the #1 Educator of JEE on India's biggest online platform
+                and I believe that everyone has the right to quality education and with the help of my social media platforms, I have helped millions of students find their path to success in the last 5 years. In the next few decades, India will rise
+                as the leader of the world with the maximum young workforce, but for this, we need some good pilots who can take us through this. I help these young hustlers find their true potential so that they can fly us to victory.</h5>
+       </section>
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">&copy; 2023 | Light Solar</a>
+    </footer>
+    <!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
